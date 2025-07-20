@@ -55,7 +55,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Resource Include="Resources\Icons\RibbonIcon32.png" />
         <Resource Include="Resources\Icons\ToSVG16.png" />
         <Resource Include="Resources\Icons\ToSVG32.png" />
     </ItemGroup>

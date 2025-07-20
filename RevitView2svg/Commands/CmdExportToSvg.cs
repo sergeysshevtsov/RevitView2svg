@@ -18,7 +18,10 @@ public class CmdExportToSvg : ExternalCommand
         var activeView = document.ActiveView;
 
         if (activeView is not ViewPlan viewPlan || activeView.IsTemplate || !activeView.IsValidObject)
+        {
+            TaskDialog.Show("View Check", "The active view is NOT a 2D view plan.");
             return;
+        }
 
         List<Line> geometryLines = [];
         Options geomOptions = new()
