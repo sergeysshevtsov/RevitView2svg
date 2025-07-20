@@ -1,0 +1,5 @@
+{
+  "$schema": "./build.schema.json",
+  "Solution": "RevitView2svg.sln",
+  "Verbosity": "Normal"
+}
