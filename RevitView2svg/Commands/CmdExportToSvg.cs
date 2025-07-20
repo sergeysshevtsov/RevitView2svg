@@ -17,6 +17,9 @@ public class CmdExportToSvg : ExternalCommand
         var document = uidoc.Document;
         var activeView = document.ActiveView;
 
+        if (activeView is not ViewPlan viewPlan || activeView.IsTemplate || !activeView.IsValidObject)
+            return;
+
         List<Line> geometryLines = [];
         Options geomOptions = new()
         {
